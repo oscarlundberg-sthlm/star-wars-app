@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600&display=swap');
+
 body {
   margin: 0;
+  font-family: 'Khula', sans-serif;
+  background-color: #0F0F0F;
+  text-align: center;
+}
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@keyframes loaderAni {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-top: 4px solid #BBB;
+  border-right: 4px solid #BBB;
+  border-bottom: 4px solid #BBB;
+  border-left: 4px solid transparent;
+  animation: loaderAni 1s infinite linear;
+  display: inline-block;
 }
