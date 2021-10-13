@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 
 export const colors = {
   black: '#0F0F0F',
-  // blue: '#89A3FF',
   blue: '#c3ddff',
   blue2: '#1F548E',
   red: '#FF0000',

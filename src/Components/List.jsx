@@ -138,8 +138,7 @@ function List({ searchInput }) {
 export default List
 
 const ReturnDiv = styled.div`
-  background-color: ${ ({ colors }) => colors.black /* + 'DD' */ };
-  /* box-shadow: 0px 0px 30px ${ ({ colors }) => colors.red }; */
+  background-color: ${ ({ colors }) => colors.black };
   flex-grow: 1;
   color: ${ ({ colors }) => colors.lightGray };
   overflow-y: scroll;
