@@ -50,8 +50,9 @@ function List({ searchInput }) {
   )
 
   const handleScroll = () => {
-    let scroll = listRef.current.scrollTop;
+    let scroll = Math.round(listRef.current.scrollTop);
     let bottom = listRef.current.scrollHeight - listRef.current.clientHeight;
+    console.log(scroll, bottom);
     if (scroll === bottom && nextPage) {
       fetchMore();
     }
