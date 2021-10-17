@@ -12,7 +12,7 @@ function Header({ searchInput, setSearchInput }) {
       <Logo>
         <img src="/svg/ChOfStarWars_logo.svg" alt="Characters of Star Wars Logo" />
       </Logo>
-      <Form>
+      <Form onSubmit={e => e.preventDefault()}>
         <ControlledInput colors={colors} type="text" value={searchInput} onChange={handleInput} placeholder='Search' />
       </Form>
     </ReturnDiv>
@@ -39,5 +39,4 @@ const ControlledInput = styled.input`
   padding: 0.5em 0;
   font-weight: 600;
   box-shadow: 0px 0px 31px ${ ({ colors }) => colors.blue };
-  /* box-shadow: 0px 0px 31px #c3ddff; */
 `
